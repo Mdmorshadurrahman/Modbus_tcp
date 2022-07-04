@@ -19,12 +19,12 @@ Address from 1 to 247. The Master can also write information to the Slaves.
 - Ubuntu [20.04/18.04/16.04](https://releases.ubuntu.com/) system 
 - Ros [kinetic/Noetic](http://wiki.ros.org/ROS/Installation)
 - joystick (for sending message as a modbus client)
-- Window
+- Windows system with [Siemens TIA PORTAL v13](https://support.industry.siemens.com/cs/document/78793685/simatic-step-7-(tia-portal)-v13-trial-download?dti=0&lc=de-WW)(for communicating with PLCs)
 
 ## How it Works?
 
 - [ ] joystick setup ([joy_ros](http://wiki.ros.org/joy/Tutorials/ConfiguringALinuxJoystick))
-- [ ] build teleop_twist_joy node to convert `joy (sensor_msgs/Joy)` from joytick to `cmd_vel (geometry_msgs/Twist)` to modbus
+- [ ] build [teleop_twist_joy node](https://github.com/Mdmorshadurrahman/Modbus_tcp/tree/main/teleop_twist_joy) to convert `joy (sensor_msgs/Joy)` from joytick to `cmd_vel (geometry_msgs/Twist)` to modbus
 - [ ] 1. to communicate between Ubuntu and/or Pis [click here](https://github.com/Mdmorshadurrahman/Modbus_tcp/tree/main/modbus/modbus)
       2. to communicate between Ubuntu/Pi and PLCs [click here](https://github.com/Mdmorshadurrahman/Modbus_tcp/tree/main/modbus/modbus_plc_siemens) 
 
