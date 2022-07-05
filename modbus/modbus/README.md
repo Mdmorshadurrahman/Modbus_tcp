@@ -27,12 +27,12 @@ twisted server implementation, his work is based on.
 
 Start a modbus server or use an existing one:
 ```
-	$ rosrun modbus_wrapper modbus_server.py _port:=1234
+	$ rosrun modbus modbus_server.py _port:=1234
 ```
 Start the corresponding modbus client on the same or another computer. 
 If started on another computer, replace localhost with the IP of the modbus server
 ```
-	$ rosrun modbus_wrapper modbus_client.py _ip:="localhost" _port:=1234
+	$ rosrun modbus modbus_client.py _ip:="localhost" _port:=1234
 ```
 
 ## Contributors
