@@ -21,6 +21,10 @@ Address from 1 to 247. The Master can also write information to the Slaves.
 - joystick (for sending message as a modbus client)
 - Windows system with [Siemens TIA PORTAL v13](https://support.industry.siemens.com/cs/document/78793685/simatic-step-7-(tia-portal)-v13-trial-download?dti=0&lc=de-WW)(for communicating with PLCs)
 
+## Usage 
+
+Simply download this repo into your workspace and you are on your way. There is a simple example file to get you started.
+
 ## How it Works?
 
 - [ ] joystick setup ([joy_ros](http://wiki.ros.org/joy/Tutorials/ConfiguringALinuxJoystick))
