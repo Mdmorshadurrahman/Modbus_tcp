@@ -2,3 +2,7 @@ teleop_twist_joy [![Build Status](https://travis-ci.org/ros-teleop/teleop_twist_
 ================
 
 Simple joystick teleop for twist robots. See [ROS Wiki](http://wiki.ros.org/teleop_twist_joy)
+
+## Usage
+
+simply build using `catkin_make` and change **config** file to modify controller buttons accordingly
