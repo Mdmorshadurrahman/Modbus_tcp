@@ -54,20 +54,20 @@ class PublisherAndSubscriber:
     def __init__(self, pub_topic, sub_topic):
         self.publisher = rospy.Publisher(pub_topic, HoldingRegister, queue_size=50)
         self.subscriber = rospy.Subscriber(sub_topic, Twist, self.callback)
-        self.x, self.y, self.z= 3, 3, 3
-        self.cxx, self.cyy, self.czz = 3, 3, 3
+        self.x, self.y, self.z= 1, 1, 1
+        self.cxx, self.cyy, self.czz = 1, 1, 1
 
     def callback(self, cmd_vel_msg):
         rospy.loginfo("getting_cmd")
         if cmd_vel_msg.linear.x <0 or cmd_vel_msg.linear.y <0 or cmd_vel_msg.linear.z <0:
-                self.x = cmd_vel_msg.linear.x*-1
-                self.y = cmd_vel_msg.linear.y*-1
-                self.z = cmd_vel_msg.linear.z*-1
+                self.x = int(cmd_vel_msg.linear.x*-1)
+                self.y = int(cmd_vel_msg.linear.y*-1)
+                self.z = int(cmd_vel_msg.linear.z*-1)
                 rospy.loginfo("negative values modified")
         else:
-                self.x = cmd_vel_msg.linear.x
-                self.y = cmd_vel_msg.linear.y
-                self.z = cmd_vel_msg.linear.z
+                self.x = int(cmd_vel_msg.linear.x)
+                self.y = int(cmd_vel_msg.linear.y)
+                self.z = int(cmd_vel_msg.linear.z)
                 rospy.loginfo("normally executed") 
 
         self.xx = cmd_vel_msg.angular.x
