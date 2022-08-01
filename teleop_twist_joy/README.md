@@ -8,4 +8,4 @@ Simple joystick teleop for twist robots. See [ROS Wiki](http://wiki.ros.org/tele
 simply build using `catkin_make` and change **config** file to modify controller buttons accordingly
 
 ## Launch
-`roslaunch teleop_twist_joy teleop.launch joy_config:='ps3-holonomic'`
+`roslaunch teleop_twist_joy teleop.launch joy_config:='simple-msg-send'`
